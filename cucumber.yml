@@ -1,0 +1,14 @@
+#  default: --no-source --color --format pretty
+#  report_html: "-f html -o report/"
+#  report_json: -f json -o report/cucumber-json-report.json
+#  rerun_log: -f rerun -o cucumber_failures.txt
+
+#  Browsers
+#  firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+
+# tamplete
+parallel: -p parallel_html_report -p chrome
+
+# report
+parallel_html_report: --format pretty --format html --out report/relatorio_<%= ENV['QTD_BROWSERS'] %>.html
