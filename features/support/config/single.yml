@@ -1,0 +1,10 @@
+server: hub-cloud.browserstack.com
+user: lucasfontes1
+key: 41dBzccWfQkR7zoyP6zR
+
+common_caps:
+  build: capybara-browserstack
+  browserstack.debug: true
+
+browser_caps:
+- browser: chrome
